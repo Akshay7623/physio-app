@@ -1,0 +1,251 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Nunito", sans-serif !important;
+}
+
+.theme-color {
+  color: #212121;
+}
+
+.theme-bg {
+  background-color: #b23535;
+}
+
+.theme-text {
+  color: #b23535;
+}
+
+.service-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-in-out {
+  animation: zoomIn 2s infinite alternate;
+}
+
+.scroll_to_top {
+  z-index: 9999;
+}
+
+.Mui-selected {
+  background-color: #607D8B !important;
+}
+
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+  color: #607D8B !important;
+  font-size: 14px !important;
+}
+
+
+.css-19qh8xo-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #455a64 !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 12px !important;
+}
+
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root :hover {
+  border: none !important;
+  outline: none !important;
+}
+
+
+
+.dropdown {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+  background-color: white;
+}
+
+.dropdown-header {
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-body {
+  padding: 5px;
+  border-top: 1px solid #E5E8EC;
+  display: none;
+}
+
+.dropdown-body.open {
+  display: block;
+}
+
+.dropdown-item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dropdown-item:hover {
+  cursor: pointer;
+}
+
+.dropdown-item-dot {
+  opacity: 0;
+  color: #91A5BE;
+  transition: all .2s ease-in-out;
+}
+
+.dropdown-item-dot.selected {
+  opacity: 1;
+}
+
+.icon {
+  font-size: 13px;
+  color: #91A5BE;
+  transform: rotate(0deg);
+  transition: all .2s ease-in-out;
+}
+
+.icon.open {
+  transform: rotate(90deg);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 12.5px 14px !important;
+  color: #455A64 !important;
+  font-size: small !important;
+  font-weight: 600 !important;
+  font-family: "Nunito", sans-serif !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: #455A64 !important;
+  font-size: small !important;
+  font-weight: 400 !important;
+  font-family: "Nunito", sans-serif !important;
+}
+
+.google_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: rgb(224 224 224);
+  background-color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  color: rgb(66 66 66);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
+
+
+.typing-demo {
+  width: 30ch;
+  animation: typing 3s steps(30), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  /* font-size: 14px; */
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+.title_lines {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+
+.title_lines:before,
+.title_lines:after {
+  position: absolute;
+  top: 51%;
+  overflow: hidden;
+  width: 48%;
+  height: 1px;
+  content: '\a0';
+  background-color: #212121;
+  margin-left: 2%;
+}
+
+.title_lines:before {
+  margin-left: -50%;
+  text-align: right;
+}
+
+
+.menu_btn {
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+}
+
+#svgator {
+  color: #A5A5A5;
+}
+
+#svgator:hover {
+  color: #fff;
+}
+
+
+.faq_header {
+  font-weight: 700 !important;
+  color: #455a64;
+}
+
+.custom_input {
+  background-color: transparent !important;
+  border: 1px solid #b0bec5 !important;
+}
